@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" target="_blank"
+    rel="noreferrer noopener">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css" />
+
+  <link rel="stylesheet" href="Styles/style.css">
+  <link rel="stylesheet" href="javascript.js">
+  <title>Obrien Clone</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo.png" alt="Logo" width="100" height="50" id="img1">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center text-white" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+             
+              <li><a class="dropdown-item" href="#">Home 1</a></li>
+              <li><a class="dropdown-item" href="#">Home 2</a></li>
+              <li><a class="dropdown-item" href="#">Home 3</a></li>
+              <li><a class="dropdown-item" href="#">Home 4</a></li>
+
+      
+            
+            </ul>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Shop
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+              <li><a class="dropdown-item" href="#">Shop 1</a></li>
+              <li><a class="dropdown-item" href="#">Shop 2</a></li>
+              <li><a class="dropdown-item" href="#">Shop 3</a></li>
+              <li><a class="dropdown-item" href="#">Shop 4</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Blog
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+              <li><a class="dropdown-item" href="#">Blog 1</a></li>
+              <li><a class="dropdown-item" href="#">Blog 2</a></li>
+              <li><a class="dropdown-item" href="#">Blog 3</a></li>
+              <li><a class="dropdown-item" href="#">Blog 4</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+              <li><a class="dropdown-item" href="#">Page 1</a></li>
+              <li><a class="dropdown-item" href="#">Page 2</a></li>
+              <li><a class="dropdown-item" href="#">Page 3</a></li>
+              <li><a class="dropdown-item" href="#">Page 4</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-cart"></i>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav navbar-left">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <div class="vl">
+          </div>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Register</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="currencyDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Currency
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="currencyDropdown" id="dropdown-item">
+              <li><a class="dropdown-item" href="#">USD</a></li>
+              <li><a class="dropdown-item" href="#">EUR</a></li>
+              <li><a class="dropdown-item" href="#">JPY</a></li>
+              <li><a class="dropdown-item" href="#">USD</a></li>
+              <li><a class="dropdown-item" href="#">EUR</a></li>
+              <li><a class="dropdown-item" href="#">JPY</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- SLIDER START -->
+
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active slideshow">
+          <img src="./images/sliderimage1.png" class="d-block w-100" style="height: 550px; object-fit: cover;" alt="...">
+          <div class="container-fluid text-box">
+            <div class="column">
+              <h1 class="heading1">Cold Process Organic</h1>
+              <h3 class="heading2">Superior Skin Care</h3>
+              <button class="btn1">Shop Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item slideshow">
+          <img src="./images/sliderimage2.png" class="d-block w-100" style="height: 550px; object-fit: cover;" alt="...">
+          <div class="container-fluid text-box">
+            <div class="column">
+              <h1 class="heading1">Organic Products</h1>
+              <h3 class="heading2">Life With Beauty</h3>
+              <button class="btn1">SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+
+    <!-- SLIDER ENDS -->
+
+
+    <div class="container">
+      <div class="row p-5 justify-content-center align-item-center">
+        <div class="col-5 p-4">
+          <h4 class="fw-bolder fs-2"> Important to eat fruit </h4>
+          <p> Eating fruit provides health benefits — people who eat more fruits and vegetables as part of an overall
+            healthy diet are likely to have a reduced risk of some chronic diseases. Fruits provide nutrients vital for
+            health and maintenance of your body.<br><br>
+
+            Fruits are sources of many essential nutrients that are underconsumed, including potassium, dietary fiber,
+            vitamin C, and folate (folic acid).
+            <br><br>
+
+            Most fruits are naturally low in fat, sodium, and calories. None have cholesterol.
+          </p>
+        </div>
+        <div class="col-6 ">
+          <img src="./images/fresh.png" alt="Logo" width="550" height="450"  >
+        </div>
+      </div>
+    </div>
+
+    <!-- ........................... -->
+
+    <div class="row mt-2 justify-content-center align-item-center text-center">
+      <div class="col-6 p-5 justify-content-center align-item-center text-center">
+        <h1 style="margin-top: 20px;">Best Sale </h1>
+        <p>All best seller product are now available for you and your <br> can buy this product from here any time any
+          where so shop <br> now</p>
+      </div>
+    </div>
+
+    <!-- ........................... -->
+
+    <section class="products">
+      <h2>Our Products</h2>
+      <div class="all-products">
+        <div class="product">
+          <div class="img-box"></div>
+          <span class="label-sale position-absolute text-uppercase text-white text-center d-block">Soldout</span>
+          <div class="product-info">
+            <h4 class="product-title">Product dummy name
+            </h4>
+            <p class="product-price">$12</p>
+            <a class="product-btn" href="#">Buy Now</a>
+          </div>
+        </div>
+        <div class="product">
+          <div class="img-box1"></div>
+          <div class="product-info">
+            <h4 class="product-title">Product dummy title
+            </h4>
+            <p class="product-price">$2</p>
+            <a class="product-btn" href="#">Buy Now</a>
+          </div>
+        </div>
+        <div class="product">
+          <div class="img-box2"></div>
+          <div class="product-info">
+            <h4 class="product-title">Product dummy title
+            </h4>
+            <p class="product-price">$9</p>
+            <a class="product-btn" href="#">Buy Now</a>
+
+          </div>
+        </div>
+        <div class="product">
+          <div class="img-box3"></div>
+          <div class="product-info">
+            <h4 class="product-title">Product dummy name
+            </h4>
+            <p class="product-price">$6*</p>
+            <a class="product-btn" href="#">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- .................................... -->
+
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 col-lg-6 text-center col-custom">
+            <div class=" h-100 d-flex justify-content-center align-items-center">
+              <img src="./images/banner1.png" alt="Banner Thumb" width="82%">
+            </div>
+          </div>
+          <div class="col-md-7 col-lg-6 text-center justify-content-center col-custom">
+            <div class="d-flex flex-column align-items-center justify-content-center h-100">
+              <h2 class="text-uppercase">Flash Deals</h2>
+              <h3 class="margin-top-40 text-uppercase">Hurry up and Get 25% Discount</h3>
+              <button> SHOP NOW </button>
+              <div class="countdown-timer">
+                <div class="timer-item">
+                  <div class="days">
+                    <h3>00</h3>
+                    <span>Days</span>
+                  </div>
+                </div>
+                <div class="timer-item">
+                  <div class="hours">
+                    <h3>00</h3>
+                    <span>Hours</span>
+                  </div>
+                </div>
+                <div class="timer-item">
+                  <div class="minutes">
+                    <h3>00</h3>
+                    <span>Minutes</span>
+                  </div>
+                </div>
+                <div class="timer-item">
+                  <div class="seconds">
+                    <h3>00</h3>
+                    <span>Seconds</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ...................................... -->
+
+
+    <div class="banner-area">
+      <div class="container container custom-area">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-custom">
+            <div class="banner-image hover-style">
+              <a class="d-block" href="#">
+                <img class="w-100" src="./images/card1.png" alt="Banner Image" id="cardimage">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-custom">
+            <div class="banner-image hover-style">
+              <a class="d-block" href="#">
+                <img class="w-100" src="./images/card2.png" alt="Banner Image" id="cardimage">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-custom">
+            <div class="banner-image hover-style mb-0">
+              <a class="d-block" href="#">
+                <img class="w-100" src="./images/card3.png" alt="Banner Image" id="cardimage">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ................................ -->
+
+    <div class="row mt-2 justify-content-center align-item-center text-center">
+      <div class="col-6 p-5 justify-content-center align-item-center text-center">
+        <h1 style="margin-top: 20px;">Feature Products</h1>
+        <p>All best seller product are now available for you and your <br> can buy this product from here any time any
+          where so sop <br> now</p>
+      </div>
+    </div>
+
+    <!-- .................... -->
+
+    <section class="products">
+      <div class="all-products">
+        <div class="product">
+          <div class="img-box"></div>
+          <div class="product-info">
+            <h4 class="product-title">Product dummy name
+            </h4>
+            <p class="product-price">$12</p>
+            <a class="product-btn" href="#">Buy Now</a>
+          </div>
+        </div>
+        <div class="product">
+          <div class="img-box1"></div>
+          <div class="product-info">
+            <h4 class="product-title">Product dummy title
+            </h4>
+            <p class="product-price">$2</p>
+            <a class="product-btn" href="#">Buy Now</a>
+          </div>
+        </div>
+        <div class="product">
+          <div class="img-box2"></div>
+          <div class="product-info">
+            <h4 class="product-title">Product dummy title
+            </h4>
+            <p class="product-price">$9</p>
+            <a class="product-btn" href="#">Buy Now</a>
+
+          </div>
+        </div>
+        <div class="product">
+          <div class="img-box3"></div>
+          <div class="product-info">
+            <h4 class="product-title">Product dummy name
+            </h4>
+            <p class="product-price">$6*</p>
+            <a class="product-btn" href="#">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="all-products">
+        <div class="product">
+          <div class="img-box"></div>
+          <div class="product-info">
+            <h4 class="product-title">Product dummy name
+            </h4>
+            <p class="product-price">$12</p>
+            <a class="product-btn" href="#">Buy Now</a>
+          </div>
+        </div>
+        <div class="product">
+          <div class="img-box1"></div>
+          <div class="product-info">
+            <h4 class="product-title">Product dummy title
+            </h4>
+            <p class="product-price">$2</p>
+            <a class="product-btn" href="#">Buy Now</a>
+          </div>
+        </div>
+        <div class="product">
+          <div class="img-box2"></div>
+          <div class="product-info">
+            <h4 class="product-title">Product dummy title
+            </h4>
+            <p class="product-price">$9</p>
+            <a class="product-btn" href="#">Buy Now</a>
+
+          </div>
+        </div>
+        <div class="product">
+          <div class="img-box3"></div>
+          <div class="product-info">
+            <h4 class="product-title">Product dummy name
+            </h4>
+            <p class="product-price">$6*</p>
+            <a class="product-btn" href="#">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ....................... -->
+
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 col-lg-6 text-center col-custom">
+            <div class=" h-100 d-flex justify-content-center align-items-center">
+              <img src="./images/banner2.png" alt="Banner" id="banner1" width="82%">
+            </div>
+          </div>
+          <div class="col-md-7 col-lg-6 text-center justify-content-center col-custom">
+            <div class="d-flex flex-column align-items-center justify-content-center h-100">
+              <h2 class="text-uppercase font-weight-small">SPECIAL OFFER FOR SUBSCRIPTION</h2>
+              <h3 class="margin-top-4 text-uppercase" id="h3">GET INSTANT DISCOUNT FOR MEMBERSHIP</h3>
+              <p>Subscribe our newsletter and all latest news of our <br>
+                latest product, promotion and offers</p>
+              <form class="mt-4">
+                <div class="flex items-center">
+                  <input type="email" class="w-full border rounded rounded-l px-4 py-2 focus:outline-none"
+                    placeholder="Your Email">
+                  <button class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded"
+                    type="submit">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- .................... -->
+
+    <div class="row mt-2 justify-content-center align-item-center text-center">
+      <div class="col-6 p-5 justify-content-center align-item-center text-center">
+        <h1 style="margin-top: 20px;">Latest Blog</h1>
+        <p>If you want to know about the organic product then keep <br> an eye on our blog.</p>
+      </div>
+    </div>
+
+
+    <!-- ...................... -->
+
+    <div class="container" id="slickslider1">
+      <div class="row slider">
+        <div class="col-md-12">
+          <div class="card">
+            <img src="./images/blog1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">17 August 2023 / Author: Obrien Demo Admin</p>
+              <h5 class="card-title">There Are Many Variations of Passages of Lorem Ipsum Available</h5>
+              <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                piece of classical Latin literature from 45 BC, making...</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="card">
+            <img src="./images/blog2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">18 April 2023 / Author: Obrien Demo Admin</p>
+              <h5 class="card-title">There Are Many Variations of Passages of Lorem Ipsum Available</h5>
+              <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                piece of classical Latin literature from 45 BC, making...</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="card">
+            <img src="./images/blog3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">25 March 2023 / Author: Obrien Demo Admin</p>
+              <h5 class="card-title">There Are Many Variations of Passages of Lorem Ipsum Available</h5>
+              <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                piece of classical Latin literature from 45 BC, making...</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="card">
+            <img src="images/blog4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">17 September 2023 / Author: Obrien Demo Admin</p>
+              <h5 class="card-title">There Are Many Variations of Passages of Lorem Ipsum Available</h5>
+              <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                piece of classical Latin literature from 45 BC, making...</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="card">
+            <img src="./images/blog1.png"   class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">28 December 2023 / Author: Obrien Demo Admin</p>
+              <h5 class="card-title">There Are Many Variations of Passages of Lorem Ipsum Available</h5>
+              <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                piece of classical Latin literature from 45 BC, making...</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 md-2">
+          <div class="card">
+            <img src="./images/blog2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">01 October 2023 / Author: Obrien Demo Admin</p>
+              <h5 class="card-title">There Are Many Variations of Passages of Lorem Ipsum Available</h5>
+              <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                piece of classical Latin literature from 45 BC, making...</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="card">
+            <img src="./images/blog3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">08 September 2023 / Author: Obrien Demo Admin</p>
+              <h5 class="card-title">There Are Many Variations of Passages of Lorem Ipsum Available</h5>
+              <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                piece of classical Latin literature from 45 BC, making...</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="card">
+            <img src="./images/blog4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">28 February 2023 / Author: Obrien Demo Admin</p>
+              <h5 class="card-title">There Are Many Variations of Passages of Lorem Ipsum Available</h5>
+              <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                piece of classical Latin literature from 45 BC, making...</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ....................... -->
+    <h1 style="margin-top: -5px; margin-left: 560px; margin-bottom: 20px;">Contact Us</h1>
+    <di class="container1">
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            If you'd like to visit our physical location, here's our address:
+            <br>
+             <strong> ARF PAC KAMRA , Attock City , Punjab , Paksitan </strong>
+            <br>
+            <br>
+            Feel free to contact us through the method that's most convenient for you. We aim to respond to all
+            inquiries as promptly as possible. 
+            <br>
+            <br>
+            Thank you for your interest in our <strong>Obrien</strong> company !
+          </p>
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off">
+
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn2" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- .........Footer.......... -->
+
+    <footer>
+      <div class="container" style="background-color: #1B1B1C;">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-box">
+              <img src="Images/logo.png" alt="">
+              <p style="margin-top: 5px;">Obrien is the best parts shop of your daily nutritions. What kind of nutrition
+                do you need you can get here Fruits and Vegetables. </p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6">
+            <div class="single-box">
+              <h2 class="widget-title">Information</h2>
+              <ul>
+                <li><a href="#">Our Company</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Why We?</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6">
+            <div class="single-box">
+              <h2 class="widget-title">Quicklink</h2>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6">
+            <div class="single-box">
+              <h2 class="widget-title">Support</h2>
+              <ul>
+                <li><a href="#">Online Support</a></li>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+
+                <li><a href="#">Terms of Service</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-box">
+              <h2 class="widget-title">See Information</h2>
+              <div class="info">
+                <div class="information">
+                  <img src="Images/location.png" class="icon" alt="" />
+                  <p>ARF PAC KAMRA , Attock City , Punjab , Paksitan</p>
+                </div>
+                <div class="information">
+                  <img src="Images/email.png" class="icon" alt="" />
+                  <p>tayyabsattar1125@gmail.com</p>
+                </div>
+                <div class="information">
+                  <img src="Images/phone.png" class="icon" alt="" />
+                  <p>0123456789</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </footer>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center text-white">
+            <p id="Copyright">Copyright © 2023 &nbsp; | &nbsp; Design by <strong> MUHAMMAD TAYYAB SATTAR </strong>
+              &nbsp; | &nbsp; All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- .......................... -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+      $('.slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              arrows: false
+
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const modeToggle = document.querySelector("#mode-toggle");
+        const body = document.body;
+
+        modeToggle.addEventListener("click", function () {
+          body.classList.toggle("dark-mode");
+          body.classList.toggle("light-mode");
+        });
+      });
+    </script>
+    
+    
+
+
+</body>
+
+</html>
